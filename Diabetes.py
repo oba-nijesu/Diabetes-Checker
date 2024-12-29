@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 # Load dataset
 dt = pd.read_csv("diabetes.csv")
 x = dt.iloc[:, :-1].values
-y = dt.iloc[:, -1].valuesc
+y = dt.iloc[:, -1].values
 
 # Split dataset into train and test sets
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42, shuffle=True)
